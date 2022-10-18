@@ -1,0 +1,42 @@
+.statsCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  padding: 15px 0;
+  border-radius: 12px;
+  .stats {
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    // box-shadow: rgb(145 158 171 / 20%) 0px 0px 2px 0px,
+    //   rgb(145 158 171 / 12%) 0px 12px 24px -4px;
+    margin-right: 12px;
+    display: flex;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.959);
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    .data {
+      .title {
+        font-family: "Poppins", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        color: rgb(33, 43, 54);
+      }
+      .count {
+        font-size: 30px;
+      }
+    }
+  }
+  .iconWrapper {
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: rgba(115, 103, 240, 0.12);
+    img {
+      width: 25px;
+    }
+  }
+}

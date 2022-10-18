@@ -1,0 +1,28 @@
+@mixin container {
+  display: block;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin inputWrapper {
+  label {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Readex Pro", sans-serif;
+    color: #6e6e6e;
+  }
+  input[type='text'] , input[type='number'] , textarea {
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 8px 5px;
+    border-radius: 2px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid rgba(112, 112, 221, 0.692);
+    }
+  }
+}

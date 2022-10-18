@@ -1,0 +1,73 @@
+.login {
+    font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &Holder {
+    min-width: 400px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px 40px;
+  }
+  h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .inputHolder {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    label {
+      margin-bottom: 2px;
+      display: block;
+      font-size: 13px;
+      font-family: "Readex Pro", sans-serif;
+      color: #6e6e6e;
+    }
+    input {
+      background: whitesmoke;
+      border: 1px solidi;
+      width: 100%;
+      padding: 10px 5px;
+      border-radius: 4px;
+      border: 1px solid #eee;
+      &:focus {
+        outline: none;
+        border: 1px solid #007db5;
+      }
+    }
+    small {
+      font-size: 11px;
+      color: red;
+    }
+    img {
+      cursor: pointer;
+      width: 16px;
+      position: absolute;
+      top: 30px;
+      right: 10px;
+    }
+  }
+  button {
+    max-height: 40px;
+    padding: 12px 30px;
+    border-radius: 5rem;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Readex Pro", sans-serif;
+    color: #fff;
+    margin-top: 15px;
+    background-color: #000;
+    text-align: center;
+    transition: all 0.3s ease;
+    &:hover {
+      background: rgba(0, 0, 0, 0.884);
+    }
+  }
+}

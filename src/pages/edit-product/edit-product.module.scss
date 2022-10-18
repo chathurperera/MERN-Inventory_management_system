@@ -1,0 +1,135 @@
+@import "styles/mixins.scss";
+@import "styles/variables";
+
+.editProduct {
+  @include container;
+  .head {
+    h3 {
+      font-size: 25px;
+    }
+  }
+  .productCard {
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: rgb(145 158 171 / 20%) 0px 0px 2px 0px,
+      rgb(145 158 171 / 12%) 0px 12px 24px -4px;
+  }
+  .fileInputArea {
+    background-color: rgb(244, 246, 248);
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px dashed #eee;
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    cursor: pointer;
+    input {
+      opacity: 0;
+      display: block;
+      position: absolute;
+      height: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+    }
+    .imageWrapper img {
+      width: 100%;
+    }
+    .content {
+      p {
+        font-size: 14px;
+        color: #637381;
+      }
+    }
+  }
+  .filesPreview {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200, 1fr));
+  }
+  .imagePreview {
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+    position: relative;
+    .closeIconWrapper {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgba(22, 28, 36, 0.72);
+      display: grid;
+      cursor: pointer;
+      place-items: center;
+      .closeIcon {
+        width: 10px;
+      }
+    }
+    .fileImage {
+      border-radius: 12px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .uploadButtons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+    button {
+      display: block;
+      cursor: pointer;
+      border: none;
+      border-radius: 3px;
+      padding: 6px;
+      font-size: 13px;
+      transition: all .3s ease;
+      color: #010203;
+      background-color: #fff;
+      border: 1px solid black;
+      &:hover{
+        color: #fff;
+        background-color: #010203;
+      }
+      // background-color: #00ab55;
+    }
+  }
+  .saveButtonWrapper {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      cursor: pointer;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      color: #fff;
+      background-color: #00ab55;
+    }
+  }
+}
+.genderContainer {
+  display: flex;
+  gap: 15px;
+  padding-top: 8px;
+  .radioWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    label {
+      display: block;
+      margin-bottom: 2px;
+      font-size: 13px;
+      font-weight: 500;
+      font-family: "Readex Pro", sans-serif;
+      color: #6e6e6e;
+    }
+  }
+}
+.inputWrapper {
+  @include inputWrapper;
+}

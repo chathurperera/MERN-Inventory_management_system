@@ -1,0 +1,8 @@
+.layout {
+  display: grid;
+  grid-template-columns: 2fr 7fr;
+  gap: 20px;
+  .outletWrapper {
+    padding: 20px 0;
+  }
+}

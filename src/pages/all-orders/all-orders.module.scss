@@ -1,0 +1,73 @@
+@import "styles/variables";
+@import "styles/mixins.scss";
+
+.allOrders {
+  @include container;
+
+  &Table {
+    width: 100%;
+    thead {
+      background-color: #f4f6f5;
+      th {
+        padding: 10px;
+        color: #637381;
+        font-family: $redex;
+        text-align: left;
+        font-weight: 400;
+        &:nth-child(1) {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        &:last-child {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+      }
+    }
+    tbody {
+      tr td {
+        padding: 10px;
+        font-size: 15px;
+        color: rgb(33, 43, 54);
+      }
+      .name {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      .productImage {
+        text-align: center;
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+      }
+      .productName {
+        font-weight: 500;
+        font-family: $poppins;
+      }
+      .actionButtons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        img {
+          width: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.status{
+    width: 150px;
+}
+.tableCard {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 30px;
+  box-shadow: rgb(145 158 171 / 20%) 0px 0px 2px 0px,
+    rgb(145 158 171 / 12%) 0px 12px 24px -4px;
+}
