@@ -5,7 +5,7 @@ const currentUser = user && JSON.parse(user).currentUser;
 const token = currentUser?.token;
 
 const API = axios.create({
-  baseURL: process.env.REACT_APP_BASE_URL,
+  baseURL: "https://california-ecommerce-backend.onrender.com/api/v1",
   headers: {
     token: `Bearer ${token}`,
   },
