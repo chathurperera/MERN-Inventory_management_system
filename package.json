@@ -48,5 +48,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://california-ecommerce-backend.onrender.com"
+  "proxy": "https://mern-ecom-webapp.onrender.com/api/v1"
 }
