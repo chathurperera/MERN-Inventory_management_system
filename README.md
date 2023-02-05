@@ -6,7 +6,7 @@
 <table align="center">
   <tbody>
     <tr>
-      <td>🌐Live site</td>
+      <td>🌐Live site </td>
       <td><a href="https://california-ecommerce.onrender.com/"><b>https://california-ecommerce.onrender.com/</b></a></td>
     </tr>
     <tr>
